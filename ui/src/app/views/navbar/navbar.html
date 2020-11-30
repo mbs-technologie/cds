@@ -317,7 +317,7 @@
             <option value="en"><i class="gb flag"></i></option>
         </sm-select>
 
-        <sm-dropdown icon="settings" *ngIf="currentUser">
+        <sm-dropdown icon="settings" *ngIf="currentUser && currentSession && currentConsumer">
             <a sm-item href="#"
                 [routerLink]="['settings', 'user', currentUser.username]">{{ 'navbar_profile' | translate }}</a>
             <a sm-item href="#" [routerLink]="['settings', 'cdsctl']">{{ 'navbar_cdsctl' | translate }}</a>
@@ -337,6 +337,7 @@
             <sm-checkbox class="theme-switch" name="switch-theme" [control]="themeSwitch" type="toggle"
                 label="{{'navbar_dark_mode' | translate}}" (change)="changeTheme()"></sm-checkbox>
             <div class="divider"></div>
+            <a sm-item (click)="mfaLogin()" *ngIf="isMFAavailable()"> {{ 'navbar_mfa' | translate }} </a>
             <a sm-item (click)="clickLogout()">{{ 'navbar_disconnect' | translate }}</a>
         </sm-dropdown>
 

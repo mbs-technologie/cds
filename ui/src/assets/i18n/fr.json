@@ -446,6 +446,7 @@
   "navbar_cdsctl": "Ligne de commande cdsctl",
   "navbar_dark_mode": "Mode sombre",
   "navbar_disconnect": "Déconnexion",
+  "navbar_mfa": "Connexion multi-facteurs",
   "navbar_documentation": "Documentation",
   "navbar_downloads": "Télécharger",
   "navbar_favorites": "Favoris",
