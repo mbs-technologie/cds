@@ -68,7 +68,7 @@
     "fomantic-ui": "2.7.5",
     "font-awesome": "4.7.0",
     "immutable": "4.0.0-rc.12",
-    "js-beautify": "1.8.9",
+    "js-beautify": "1.13.13",
     "js-yaml": "3.13.1",
     "jsonschema": "1.2.5",
     "jsrsasign": "8.0.20",
